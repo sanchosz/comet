@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<style>
+			div#counter {
+				display: inline-block
+			}
+		</style>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+			 $(document).ready(function() {
+				$.post("pull.js", "0", function(data) {
+					debugger;
+					$("#counter").text(data.counter);
+				})
+				.error(function() {alert('error')});
+			}); 
+		</script>
+	</head>
+
+	<body>
+		<span>Counter: </span><div id="counter"></div>
+	<body>
+</html>

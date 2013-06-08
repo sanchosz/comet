@@ -1,0 +1,13 @@
+{
+	"server": {
+		"port":80,
+		"threads": {
+			"number": 1
+			}
+		},
+	"processors": {
+		"file_processor": {
+			"root": "../Res"
+			}
+		}
+}
