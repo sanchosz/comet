@@ -4,8 +4,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "async-cache", "comet-service\comet-service.vcxproj", "{876CD123-17D3-4664-AB0B-B86E7899C5E1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "server", "server\server.vcxproj", "{DCD04D32-748B-4DEF-BC83-C7312DB2301C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{876CD123-17D3-4664-AB0B-B86E7899C5E1} = {876CD123-17D3-4664-AB0B-B86E7899C5E1}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test-async-cache", "test-async-cache\test-async-cache.vcxproj", "{7394F17C-5508-44AC-A51F-A044D6D46778}"
+	ProjectSection(ProjectDependencies) = postProject
+		{876CD123-17D3-4664-AB0B-B86E7899C5E1} = {876CD123-17D3-4664-AB0B-B86E7899C5E1}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
